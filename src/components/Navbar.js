@@ -11,9 +11,9 @@ const Navbar = () => (
         Space Travelers Hub
       </a>
       <ul className="nav-menu">
-        <li><NavLink to="/rockets" activeClassName="active">Rockets</NavLink></li>
-        <li><NavLink to="/missions" activeClassName="active">Missions</NavLink></li>
-        <li><NavLink to="/myProfile" activeClassName="active">My Profile</NavLink></li>
+        <li><NavLink to="/rockets" activeclassname="active">Rockets</NavLink></li>
+        <li><NavLink to="/missions" activeclassname="active">Missions</NavLink></li>
+        <li><NavLink to="/myProfile" activeclassname="active">My Profile</NavLink></li>
       </ul>
     </div>
   </nav>
