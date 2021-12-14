@@ -1,7 +1,7 @@
 .mission-header {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
