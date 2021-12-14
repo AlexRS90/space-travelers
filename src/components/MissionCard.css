@@ -16,3 +16,11 @@
     width: 20%;
     text-align: center;
 }
+
+span {
+    border: saddlebrown;
+    background-color: rgb(149, 206, 173);
+    padding: 5px;
+    border-radius: 5px;
+   
+}
