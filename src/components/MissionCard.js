@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MissionCard.css';
 
-const MissionCard = ({ mission }) => (
+const MissionCard = ({ mission, joinTheMission }) => (
   <>
     <tbody>
-      <tr>
+      <tr data-id={mission.mission_id}>
         <td className="mission-title">{mission.mission_name}</td>
         <td className="mission-desc">{mission.description}</td>
         <td className="join-mission">
-          <span className="me-3 span-top">Active Member</span>
+          <button type="button" className="me-3 span-top">Active Member</button>
         </td>
         <td className="member-status">
-          <span className="span-down">Join Mission</span>
+          <button type="button" className="span-down" onClick={joinTheMission}>Join Mission</button>
         </td>
       </tr>
     </tbody>
@@ -21,6 +21,7 @@ const MissionCard = ({ mission }) => (
 
 MissionCard.propTypes = {
   mission: PropTypes.node.isRequired,
+  joinTheMission: PropTypes.node.isRequired,
 };
 
 export default MissionCard;
