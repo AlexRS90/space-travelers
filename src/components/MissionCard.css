@@ -1,0 +1,56 @@
+.card-wrapper {
+  border: solid 2px rgb(219, 209, 209);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.mission-desc {
+  width: 65%;
+  border-left: rgb(214, 209, 209) 1px solid;
+  border-right: rgb(209, 200, 200) 1px solid;
+}
+
+.join-mission {
+  width: 13%;
+  text-align: center;
+  position: relative;
+}
+
+.member-status {
+  width: 10%;
+  text-align: center;
+  position: relative;
+}
+
+.span-top {
+  border: saddlebrown;
+  background-color: rgb(149, 206, 173);
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  cursor: pointer;
+}
+
+.span-down {
+  border: saddlebrown;
+  background-color: rgb(149, 206, 173);
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  cursor: pointer;
+}
+
+td {
+  border: solid 1px rgb(204, 196, 196);
+}
+
+.mission-title {
+  width: 10%;
+  font-weight: bold;
+}
