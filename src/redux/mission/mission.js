@@ -5,7 +5,7 @@ const initialState = [];
 
 const FETCH_MISSION_SUCCESS = 'space-travelers/mission/FETCH_MISSION_SUCCESS';
 const FETCH_MISSION_FAILURE = 'space-travelers/mission/FETCH_MISSION_FAILURE';
-const URL = 'https://api.spacexdata.com/v3/mission';
+const URL = 'https://api.spacexdata.com/v3/missions';
 
 export const fetchMissionSuccess = (payload) => ({
   type: FETCH_MISSION_SUCCESS,
