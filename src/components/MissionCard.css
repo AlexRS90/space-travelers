@@ -7,20 +7,49 @@
 }
 
 .mission-desc {
-    width: 70%;
+    width: 65%;
     border-left: red 1px solid;
     border-right: red 1px solid;
 }
 
-.mission-action {
-    width: 20%;
+.join-mission {
+    width: 13%;
     text-align: center;
+    position: relative;
 }
 
-span {
+.member-status {
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.span-top {
     border: saddlebrown;
     background-color: rgb(149, 206, 173);
     padding: 5px;
     border-radius: 5px;
-   
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    cursor: pointer;
+}
+.span-down {
+    border: saddlebrown;
+    background-color: rgb(149, 206, 173);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    cursor: pointer;
+}
+
+td {
+    border: solid 1px red;
+}
+
+.mission-title {
+    width: 10%;
+    font-weight: bold;
 }

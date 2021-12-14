@@ -6,11 +6,13 @@ const MissionCard = ({ mission }) => (
   <>
     <tbody>
       <tr>
-        <td>{mission.mission_name}</td>
+        <td className="mission-title">{mission.mission_name}</td>
         <td className="mission-desc">{mission.description}</td>
-        <td className="mission-action">
-          <span className="me-3">Active Member</span>
-          <span>Join Mission</span>
+        <td className="join-mission">
+          <span className="me-3 span-top">Active Member</span>
+        </td>
+        <td className="member-status">
+          <span className="span-down">Join Mission</span>
         </td>
       </tr>
     </tbody>
