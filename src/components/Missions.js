@@ -19,7 +19,6 @@ const Mission = () => {
           <th>Mission</th>
           <th>Description</th>
           <th>Status</th>
-          {/* <div className="line-divide">|</div> */}
         </tr>
       </thead>
       {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} />)}

@@ -1,5 +1,4 @@
 .mission-header {
-  background-color: blueviolet;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,9 +7,9 @@
 }
 
 thead {
-  border: solid 1px red;
+  border: solid 1px rgb(206, 196, 196);
 }
 
 th {
-  border: solid 1px red;
+  border: solid 1px rgb(211, 200, 200);
 }
