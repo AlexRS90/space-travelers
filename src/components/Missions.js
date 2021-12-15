@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import MissionCard from './MissionCard';
-import { fetchMission, reserveMission } from '../redux/mission/mission';
+import { fetchMission, reserveMission, cancelMission } from '../redux/mission/mission';
 import './Missions.css';
 
 const Mission = () => {
@@ -13,6 +13,12 @@ const Mission = () => {
     const mission = e.target.parentNode.parentNode;
     const missionId = mission.getAttribute('data-id');
     dispatch(reserveMission(missionId));
+  };
+
+  const leaveMission = (e) => {
+    const mission = e.target.parentNode.parentNode;
+    const missionId = mission.getAttribute('data-id');
+    dispatch(cancelMission(missionId));
   };
 
   useEffect(() => {
@@ -27,7 +33,7 @@ const Mission = () => {
           <th>Status</th>
         </tr>
       </thead>
-      {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} joinTheMission={joinTheMission} />)}
+      {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} joinTheMission={joinTheMission} leaveMission={leaveMission} />)}
     </table>
   );
 };
