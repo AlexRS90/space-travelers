@@ -22,7 +22,7 @@ const Mission = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchMission());
+    if (mission === 0) dispatch(fetchMission());
   }, []);
   return (
     <>
