@@ -37,3 +37,16 @@
   color: #314e72;
   background-color: #7a9cc6;
 }
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.badge {
+  color: #fff;
+  background-color: green;
+}
