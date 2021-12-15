@@ -6,7 +6,7 @@ import { cancelRocket } from '../redux/rocket/rocket';
 const cancelButton = ({ id }) => {
   const dispatch = useDispatch();
   return (
-    <button className="book-rocket-btn" type="button" onClick={() => dispatch(cancelRocket(id))}>Cancel Rocket</button>
+    <button className="cancel-rocket-btn" type="button" onClick={() => dispatch(cancelRocket(id))}>Cancel Rocket</button>
   );
 };
 
