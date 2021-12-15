@@ -5,15 +5,12 @@
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #7a9cc6;
 }
 
 .wrapper {
-  border: 2px solid teal;
   display: flex;
   width: 80%;
   padding: 2%;
-  background-color: #9fbbcc;
   border-radius: 10px;
 }
 
