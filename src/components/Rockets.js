@@ -19,7 +19,7 @@ const Rockets = () => {
           <img src={cohete.image} alt={`Rocket: ${cohete.name}`} width="300" />
           <div className="info-wrapper">
             <h2>{cohete.name}</h2>
-            <p><span className={`${(cohete.reserved === true ? 'visible' : 'hidden')} badge`}>Reserved </span>{cohete.description}</p>
+            <p><span className={(cohete.reserved === true ? 'badge' : 'hidden')}>Reserved</span> {cohete.description}</p>
             <span className={(cohete.reserved === false ? 'visible' : 'hidden')}><Button id={cohete.id} /></span>
             <span className={(cohete.reserved === true ? 'visible' : 'hidden')}><Cancel id={cohete.id} /></span>
           </div>
