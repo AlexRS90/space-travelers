@@ -6,7 +6,7 @@ import { bookRocket } from '../redux/rocket/rocket';
 const Button = ({ id }) => {
   const dispatch = useDispatch();
   return (
-    <button className="book-rocket-btn" type="button" onClick={() => dispatch(bookRocket(id))}>Book Rocket</button>
+    <button className="book-rocket-btn" type="button" onClick={() => dispatch(bookRocket(id))}>Reserve Rocket</button>
   );
 };
 
