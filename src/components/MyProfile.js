@@ -14,11 +14,7 @@ const MyProfile = () => {
   return (
     <div className="table-wrapper">
       <table className="table table-striped mission-section">
-        <thead>
-          <tr>
-            <th>Mission</th>
-          </tr>
-        </thead>
+        <h2>{(reservedMissions.length === 0 ? 'No Missions booked Yet' : 'My Missions')}</h2>
         {reservedMissions && reservedMissions.map((reserMisson) => <MissionCardProfile reserMisson={reserMisson} key={reserMisson.mission_id} />)}
       </table>
       <div className="rockets-wrapper">
