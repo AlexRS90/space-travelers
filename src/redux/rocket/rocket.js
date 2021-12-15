@@ -3,6 +3,7 @@ import axios from 'axios';
 const FETCH_ROCKET_SUCCES = 'FETCH_ROCKET_SUCCES';
 const FETCH_ROCKET_FAILURE = 'FETCH_ROCKET_FAILURE';
 const BOOK_ROCKET = 'BOOK_ROCKET';
+const CANCEL_ROCKET = 'CANCEL_ROCKET';
 const url = 'https://api.spacexdata.com/v3/rockets';
 
 const initialState = [];
@@ -40,6 +41,11 @@ export const bookRocket = (id) => ({
   payload: id,
 });
 
+export const cancelRocket = (id) => ({
+  type: CANCEL_ROCKET,
+  payload: id,
+});
+
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKET_SUCCES:
@@ -52,6 +58,15 @@ const rocketReducer = (state = initialState, action) => {
           return rocket;
         }
         return { ...rocket, reserved: true };
+      });
+      return newState;
+    }
+    case CANCEL_ROCKET: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: false };
       });
       return newState;
     }
