@@ -39,11 +39,11 @@
 }
 
 .cancel-rocket-btn {
-    border-radius: 10px;
-    border: 1px solid teal;
-    padding: 10px;
-    color: #314e72;
-    background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid teal;
+  padding: 10px;
+  color: #314e72;
+  background-color: #fff;
 }
 
 .visible {
