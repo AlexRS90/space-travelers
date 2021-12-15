@@ -17,6 +17,7 @@ export const fetchRocketSucces = (rocket) => {
       image: e.flickr_images[0],
       description: e.description,
       reserved: false,
+      wiki: e.wikipedia,
     }
   ));
   return ({
