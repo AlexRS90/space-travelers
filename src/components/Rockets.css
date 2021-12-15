@@ -38,6 +38,14 @@
   background-color: #7a9cc6;
 }
 
+.cancel-rocket-btn {
+    border-radius: 10px;
+    border: 1px solid teal;
+    padding: 10px;
+    color: #314e72;
+    background-color: #fff;
+}
+
 .visible {
   display: block;
 }
@@ -47,6 +55,8 @@
 }
 
 .badge {
+  display: inline;
   color: #fff;
   background-color: green;
+  width: 100px;
 }
