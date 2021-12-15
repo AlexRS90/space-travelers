@@ -1,17 +1,28 @@
 import axios from 'axios';
-
+/*eslint-disable*/
 const FETCH_ROCKET_SUCCES = 'FETCH_ROCKET_SUCCES';
 const FETCH_ROCKET_FAILURE = 'FETCH_ROCKET_FAILURE';
+const BOOK_ROCKET = 'BOOK_ROCKET';
 const url = 'https://api.spacexdata.com/v3/rockets';
 
-const initialState = {
-  rockets: [],
-};
+const initialState = [];
 
-export const fetchRocketSucces = (rocket) => ({
-  type: FETCH_ROCKET_SUCCES,
-  payload: rocket,
-});
+export const fetchRocketSucces = (rocket) => {
+  const payload = rocket.map((e) => (
+    {
+      id: e.rocket_id,
+      name: e.rocket_name,
+      type: e.rocket_type,
+      image: e.flickr_images[0],
+      description: e.description,
+      reserved: false,
+    }
+  ));
+  return ({
+    type: FETCH_ROCKET_SUCCES,
+    payload,
+  });
+};
 
 export const fetchRocketFailure = (error) => ({
   type: FETCH_ROCKET_FAILURE,
@@ -20,31 +31,30 @@ export const fetchRocketFailure = (error) => ({
 
 export const fetchRocket = () => (dispatch) => {
   axios.get(url).then((response) => {
-    const { data } = response;
-    const array = [];
-    data.forEach((key) => {
-      array.push({
-        id: key.rocket_id,
-        name: key.rocket_name,
-        type: key.rocket_type,
-        image: key.flickr_images[0],
-        description: key.description,
-        reserved: false,
-      });
-    });
-    dispatch(fetchRocketSucces(array));
+    dispatch(fetchRocketSucces(response.data));
   });
 };
+
+export const bookRocket = (id) => ({
+  type: BOOK_ROCKET,
+  payload: id,
+});
 
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKET_SUCCES:
-      return {
-        ...state,
-        rockets: [action.payload, ...state.rockets],
-      };
+      return action.payload;
     case FETCH_ROCKET_FAILURE:
       return state;
+    case BOOK_ROCKET: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: true };
+      });
+      return newState;
+    }
     default:
       return state;
   }
