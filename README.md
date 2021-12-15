@@ -7,7 +7,7 @@
 ![Project's screenshot](https://user-images.githubusercontent.com/88604987/146259073-a5319fd1-5547-497a-b281-6159b2e41cbc.png)
 
 ### Milestone 1:
-In this Milestone, we work with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services for peaople. The application will allow users to book rockets and join selected space missions.
+In this Milestone, we work with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services for people. The application will allow users to book rockets and join selected space missions.
  
  
 ## Built With
