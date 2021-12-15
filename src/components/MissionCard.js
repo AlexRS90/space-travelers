@@ -9,10 +9,10 @@ const MissionCard = ({ mission, joinTheMission, leaveMission }) => (
       <td className="mission-title">{mission.mission_name}</td>
       <td className="mission-desc">{mission.description}</td>
       <td className="join-mission">
-        <button type="button" className="me-3 span-top">{mission.reserved === true ? 'Active Member' : 'NOT A MEMBER'}</button>
+        <span className="me-3 span-top" style={mission.reserved === true ? { backgroundColor: '#0033FF' } : { backgroundColor: '#282828' }}>{mission.reserved === true ? 'Active Member' : 'NOT A MEMBER'}</span>
       </td>
       <td className="member-status">
-        <button type="button" className="span-down" onClick={mission.reserved === true ? leaveMission : joinTheMission}>{mission.reserved === true ? 'Leave mission' : 'Join Mission'}</button>
+        <button type="button" className="span-down" style={mission.reserved === true ? { backgroundColor: '#F8F8F8', color: 'red', border: '2px solid red' } : { backgroundColor: '#F8F8F8', color: 'black', border: '2px solid black' }} onClick={mission.reserved === true ? leaveMission : joinTheMission}>{mission.reserved === true ? 'Leave mission' : 'Join Mission'}</button>
       </td>
     </tr>
   </tbody>
