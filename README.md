@@ -36,7 +36,7 @@ Once you completed this steps you should see the app running at: http://localhos
 
 👤 **Michael Oledele**
 
-- GitHub: [@Micheaol](https://github.com/micheaol)
+- GitHub: [@micheaol](https://github.com/micheaol)
 - Twitter: [@micheaol](https://twitter.com/micheaol)
 - LinkedIn: [@micheaol](https://www.linkedin.com/in/micheaol/)
 
