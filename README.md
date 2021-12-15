@@ -4,6 +4,7 @@
 
 > Do you want to visit Mars? You're in the rigth place.
 
+![Project's screenshot](https://user-images.githubusercontent.com/88604987/146259073-a5319fd1-5547-497a-b281-6159b2e41cbc.png)
 
 ### Milestone 1:
  
