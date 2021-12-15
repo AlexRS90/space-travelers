@@ -25,16 +25,18 @@ const Mission = () => {
     dispatch(fetchMission());
   }, []);
   return (
-    <table className="table table-striped">
-      <thead>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} joinTheMission={joinTheMission} leaveMission={leaveMission} />)}
-    </table>
+    <>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} joinTheMission={joinTheMission} leaveMission={leaveMission} />)}
+      </table>
+    </>
   );
 };
 
