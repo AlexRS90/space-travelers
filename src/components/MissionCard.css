@@ -25,24 +25,24 @@
 }
 
 .span-top {
-  border: saddlebrown;
-  background-color: rgb(149, 206, 173);
-  padding: 5px;
-  border-radius: 5px;
+  padding: 3px;
+  border-radius: 3px;
   position: absolute;
   top: 35%;
   left: 20%;
-  cursor: pointer;
+  font-size: small;
+  color: white;
+  font-weight: bold;
 }
 
 .span-down {
   border: saddlebrown;
   background-color: rgb(149, 206, 173);
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 3px;
   position: absolute;
   top: 35%;
-  right: 20%;
+  right: 15%;
   cursor: pointer;
 }
 
