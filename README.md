@@ -34,7 +34,7 @@ Once you completed this steps you should see the app running at: http://localhos
 - Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
 - LinkedIn: [@AlexRS90](https://www.linkedin.com/in/AlexRS90/)
 
-👤 **Michael Oledele**
+👤 **Michael Oladele**
 
 - GitHub: [@micheaol](https://github.com/micheaol)
 - Twitter: [@micheaol](https://twitter.com/micheaol)
