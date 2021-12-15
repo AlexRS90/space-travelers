@@ -22,7 +22,7 @@ const MyProfile = () => {
         {reservedMissions && reservedMissions.map((reserMisson) => <MissionCardProfile reserMisson={reserMisson} key={reserMisson.mission_id} />)}
       </table>
       <div className="rockets-wrapper">
-        <h2>My Rockets</h2>
+        <h2>{(reservedRockets.length === 0 ? 'No Rockets Reserved Yet' : 'My Rockets')}</h2>
         <div className="gap">
           {reservedRockets.map((reservedRocket) => (
             <div className="info-rocket" key={reservedRocket.id}>

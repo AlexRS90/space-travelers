@@ -1,5 +1,5 @@
 import axios from 'axios';
-/*eslint-disable*/
+
 const FETCH_ROCKET_SUCCES = 'FETCH_ROCKET_SUCCES';
 const FETCH_ROCKET_FAILURE = 'FETCH_ROCKET_FAILURE';
 const BOOK_ROCKET = 'BOOK_ROCKET';

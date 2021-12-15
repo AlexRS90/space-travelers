@@ -1,5 +1,4 @@
 /* eslint-disable no-case-declarations */
-// import _ from 'lodash';
 import axios from 'axios';
 
 const initialState = [];
