@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render the component to the dom matches the snapshot 1`] = `
+<tbody>
+  <tr
+    data-testid="mission-card"
+  >
+    <td
+      className="mission-title"
+    />
+    <td
+      className="mission-desc"
+    />
+    <td
+      className="join-mission"
+    >
+      <span
+        className="me-3 span-top"
+        style={
+          Object {
+            "backgroundColor": "#282828",
+          }
+        }
+      >
+        NOT A MEMBER
+      </span>
+    </td>
+    <td
+      className="member-status"
+    >
+      <button
+        className="span-down"
+        style={
+          Object {
+            "backgroundColor": "#F8F8F8",
+            "border": "2px solid black",
+            "color": "black",
+          }
+        }
+        type="button"
+      >
+        Join Mission
+      </button>
+    </td>
+  </tr>
+</tbody>
+`;

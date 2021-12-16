@@ -1,0 +1,46 @@
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mission-section {
+  width: 30%;
+}
+
+.rockets-wrapper {
+  width: 35%;
+  padding: 10px;
+}
+
+.rockets-wrapper h2 {
+  color: #314e72;
+  text-align: center;
+}
+
+.rockets-wrapper h3 {
+  padding: 5px;
+  color: #314e72;
+}
+
+.gap {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-rocket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.info-rocket a {
+  color: #314e72;
+}
+
+.info-rocket:nth-child(odd) {
+  background-color: #bdc4cc;
+}

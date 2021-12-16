@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render mission to the DOM matches snapshot 1`] = `
+<div
+  data-testid="missions"
+>
+  <table
+    className="table table-striped"
+  >
+    <thead>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+      </tr>
+    </thead>
+  </table>
+</div>
+`;

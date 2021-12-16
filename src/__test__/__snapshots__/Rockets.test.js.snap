@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render the component to the DOM Match snapshot 1`] = `
+<div
+  className="container34"
+  data-testid="testing"
+/>
+`;

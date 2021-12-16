@@ -1,0 +1,15 @@
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+}
+
+thead {
+  border: solid 1px rgb(206, 196, 196);
+}
+
+th {
+  border: solid 1px rgb(211, 200, 200);
+}
