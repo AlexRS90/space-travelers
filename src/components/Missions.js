@@ -26,7 +26,7 @@ const Mission = () => {
   }, []);
   return (
     <>
-      <table className="table table-striped">
+      <table className="table table-striped" data-testid="missions">
         <thead>
           <tr>
             <th>Mission</th>
