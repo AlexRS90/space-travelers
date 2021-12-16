@@ -12,7 +12,7 @@ const Rockets = () => {
     if (rocket.length === 0) dispatch(fetchRocket());
   }, []);
   return (
-    <div className="container34">
+    <div className="container34" data-testid="testing">
       {rocket.map((cohete) => (
         <div key={cohete.id} className="wrapper">
           <img src={cohete.image} alt={`Rocket: ${cohete.name}`} width="300" />
