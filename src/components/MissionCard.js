@@ -5,7 +5,7 @@ import './MissionCard.css';
 
 const MissionCard = ({ mission, joinTheMission, leaveMission }) => (
   <tbody>
-    <tr data-id={mission.mission_id}>
+    <tr data-id={mission.mission_id} data-testid="mission-card">
       <td className="mission-title">{mission.mission_name}</td>
       <td className="mission-desc">{mission.description}</td>
       <td className="join-mission">

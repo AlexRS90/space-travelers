@@ -12,7 +12,7 @@ const MyProfile = () => {
   const reservedMissions = missions.filter((mission) => mission.reserved === true);
 
   return (
-    <div className="table-wrapper">
+    <div className="table-wrapper" data-testid="profile-page">
       <table className="table table-striped mission-section">
         <h2>{(reservedMissions.length === 0 ? 'No Missions booked Yet' : 'My Missions')}</h2>
         {reservedMissions && reservedMissions.map((reserMisson) => <MissionCardProfile reserMisson={reserMisson} key={reserMisson.mission_id} />)}

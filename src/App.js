@@ -8,8 +8,8 @@ import MyProfile from './components/MyProfile';
 
 const App = () => (
   <>
-    <Navbar />
     <Routes>
+      <Navbar />
       <Route exact path="/" element={<Rockets />} />
       <Route path="/rockets" element={<Rockets />} />
       <Route path="/missions" element={<Missions />} />

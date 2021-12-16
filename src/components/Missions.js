@@ -25,7 +25,7 @@ const Mission = () => {
     if (mission.length === 0) dispatch(fetchMission());
   }, []);
   return (
-    <>
+    <div data-testid="missions">
       <table className="table table-striped">
         <thead>
           <tr>
@@ -36,7 +36,7 @@ const Mission = () => {
         </thead>
         {mission && mission.map((mission) => <MissionCard mission={mission} key={mission.mission_id} joinTheMission={joinTheMission} leaveMission={leaveMission} />)}
       </table>
-    </>
+    </div>
   );
 };
 

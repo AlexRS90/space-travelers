@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render navbar to the screen matches the snapshot 1`] = `
+<nav
+  className="navbar navbar-light bg-light p-3"
+  data-testid="nav"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+    >
+      <img
+        alt="logo"
+        className="me-3"
+        height="24"
+        src="logo.png"
+        width="30"
+      />
+      Space Travelers Hub
+    </a>
+    <ul
+      className="nav-menu"
+    >
+      <li>
+        <a
+          activeclassname="active"
+          className=""
+          href="/rockets"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          className=""
+          href="/missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          className=""
+          href="/myProfile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

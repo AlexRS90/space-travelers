@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render profile to the Dom matches snapshot 1`] = `
+<div
+  className="table-wrapper"
+  data-testid="profile-page"
+>
+  <table
+    className="table table-striped mission-section"
+  >
+    <h2>
+      No Missions booked Yet
+    </h2>
+  </table>
+  <div
+    className="rockets-wrapper"
+  >
+    <h2>
+      No Rockets Reserved Yet
+    </h2>
+    <div
+      className="gap"
+    />
+  </div>
+</div>
+`;
