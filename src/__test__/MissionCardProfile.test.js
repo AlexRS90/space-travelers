@@ -25,7 +25,7 @@ const missions = [
 ];
 const reserMisson = missions.filter((mission) => mission.reserved === true);
 
-describe('render component to the screen', async () => {
+describe('render component to the screen', () => {
   test('render mission card to the screen', async () => {
     render(<MissionCardProfile reserMisson={reserMisson} />);
     const missionCardElement = await screen.getByTestId('profile-card');

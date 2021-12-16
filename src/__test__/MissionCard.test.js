@@ -33,7 +33,7 @@ const leaveMission = async () => {
 
 };
 
-describe('render the component to the dom', async () => {
+describe('render the component to the dom', () => {
   test('Render mission card to the DOM', async () => {
     render(<MissionCard mission={missions} onClick={missions.reserved === true ? leaveMission : joinTheMission} />);
     const missionCardElement = await screen.getByTestId('mission-card');

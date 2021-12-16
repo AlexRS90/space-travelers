@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render the component to the dom matches the snapshot 1`] = `
-<tbody
-  data-testid="mission-card"
->
-  <tr>
+<tbody>
+  <tr
+    data-testid="mission-card"
+  >
     <td
       className="mission-title"
     />
