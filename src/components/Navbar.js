@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images/logo.png';
 import './navbar.css';
 
 const Navbar = () => (
-  <Router>
+  <>
     <nav className="navbar navbar-light bg-light p-3" data-testid="nav">
       <div className="container">
         <a className="navbar-brand" href="/">
@@ -18,7 +18,7 @@ const Navbar = () => (
         </ul>
       </div>
     </nav>
-  </Router>
+  </>
 
 );
 
