@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './MissionCard.css';
 
 const MissionCard = ({ mission, joinTheMission, leaveMission }) => (
-  <tbody>
+  <tbody data-testid="mission-card">
     <tr data-id={mission.mission_id}>
       <td className="mission-title">{mission.mission_name}</td>
       <td className="mission-desc">{mission.description}</td>
